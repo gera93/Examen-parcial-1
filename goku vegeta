@@ -1,0 +1,25 @@
+class vegeta {
+  constructor(){
+   this.x = width/2;
+    this.y = height/2;
+    this.velx = 8;
+    this.vely = 8;
+  }
+  mostrar(){
+     imageMode(CENTER);
+  image(veg,this.x,this.y,400,400);
+  }
+  derecha(){
+    this.x = this.x + this.velx
+  }
+  izquierda(){
+    this.x = this.x - this.velx
+  }
+  abajo(){
+    this.y = this.y + this.vely
+  }
+  arriba(){
+  this.y = this.y - this.vely
+  }
+}
+-------------------------------------------------------------------------------------------------------------------------
