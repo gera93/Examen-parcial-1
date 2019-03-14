@@ -1,0 +1,67 @@
+// Primer examen parcial
+/*Alan Emiliano Cadena Ramirez  870024286
+Gerardo Ariel Gonzalez Chavez 870156966
+*/
+
+var imgFondo;
+var F;
+var imgBull;
+var B;
+var imgChar;
+var C;
+var imgPikachu;
+var P;
+var imgJiggly;
+var J;
+var imgEeve;
+var E;
+function preload(){
+imgFondo = loadImage('fondo.jpg');
+ imgBull = loadImage('bullbasaur.png');
+imgChar = loadImage('charmander.png');
+  imgPikachu = loadImage('pikachu.png');
+  imgJiggly = loadImage('jigglypuff.png');
+imgEeve =  loadImage('eevee.png');
+}
+
+function setup() {
+  createCanvas(400, 400);
+   F = new fondo();
+ B = new bull();
+  C = new Char();
+   P = new Pika();
+  J = new jiggly();
+  E = new eeve();
+}
+
+function draw() {
+  background(220);
+    F.mostrar();
+   B.mostrar();
+   C.mostrar();
+   P.mostrar();
+  J.mostrar();
+  E.mostrar();
+  B.mover();
+  if (B.salir()) {
+			B.retornar();
+		}
+  C.mover();
+  if (C.salir()) {
+			C.retornar();
+		}
+  P.mover();
+   if (P.salir()) {
+			P.retornar();
+		}
+  J.mover();
+  if (J.salir()) {
+			J.retornar();
+		}
+  E.mover();
+  if (J.salir()) {
+			J.retornar();
+		}
+  
+  
+}
